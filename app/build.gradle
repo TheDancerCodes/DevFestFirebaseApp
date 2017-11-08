@@ -27,4 +27,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:26.+'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
     testCompile 'junit:junit:4.12'
+
+    // Firebase Dependecies
+    compile 'com.google.firebase:firebase-auth:11.6.0'
 }
+// This plugin reads google-services.json file & injects some of its values into your build
+apply plugin: 'com.google.gms.google-services'
