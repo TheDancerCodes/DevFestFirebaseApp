@@ -1,0 +1,99 @@
+{
+  "project_info": {
+    "project_number": "728690283902",
+    "firebase_url": "https://devfest-firebase-app.firebaseio.com",
+    "project_id": "devfest-firebase-app",
+    "storage_bucket": "devfest-firebase-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728690283902:android:f5497e017784bdc2",
+        "android_client_info": {
+          "package_name": "com.thedancercodes.devfestfirebaseapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728690283902-kp9h88740n7j626bgppe6it0t7ajb2bb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thedancercodes.devfestfirebaseapp",
+            "certificate_hash": "bd84a67f5bb920ca835cc4eaea368386de7e4a2e"
+          }
+        },
+        {
+          "client_id": "728690283902-uvk7a4vl1v7fuq678senkpc0i7bam6ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtjG44gis2Qlclc94jHusPcNJqjrCLTok"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728690283902-uvk7a4vl1v7fuq678senkpc0i7bam6ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728690283902:android:16697d4c7f0e5d35",
+        "android_client_info": {
+          "package_name": "com.thedancercodes.firebasedemoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728690283902-u86tsb8i912k49egitd5qjhjmveivu5c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thedancercodes.firebasedemoapp",
+            "certificate_hash": "bd84a67f5bb920ca835cc4eaea368386de7e4a2e"
+          }
+        },
+        {
+          "client_id": "728690283902-uvk7a4vl1v7fuq678senkpc0i7bam6ap.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBtjG44gis2Qlclc94jHusPcNJqjrCLTok"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728690283902-uvk7a4vl1v7fuq678senkpc0i7bam6ap.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
