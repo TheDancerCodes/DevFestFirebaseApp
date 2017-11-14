@@ -3,7 +3,7 @@
           package="com.thedancercodes.devfestfirebaseapp">
 
     <!--Internet permission to enable us make network calls.-->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -19,11 +21,20 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ProfileScreenActivity"/>
+        <activity
+            android:name=".ProfileScreenActivity"
+            android:label="@string/title_activity_profile"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
-        <activity android:name=".SignupActivity"/>
+        <activity
+            android:name=".SignupActivity"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
-        <activity android:name=".ResetPasswordActivity"/>
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:label="@string/title_activity_reset_password"
+            android:theme="@style/AppTheme.NoActionBar"/>
 
     </application>
 

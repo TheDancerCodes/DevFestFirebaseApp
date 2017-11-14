@@ -34,9 +34,9 @@ public class ProfileScreenActivity extends AppCompatActivity {
         setContentView(R.layout.profile_screen);
 
         // Add the Toolbar
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        toolbar.setTitle(getString(R.string.app_name));
-//        setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(getString(R.string.app_name));
+        setSupportActionBar(toolbar);
 
         // Get Firebase auth instance
         mAuth = FirebaseAuth.getInstance();
