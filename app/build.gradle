@@ -29,4 +29,10 @@ dependencies {
     testCompile 'junit:junit:4.12'
 
     compile 'com.android.support:design:26.1.0'
+
+    // TODO (2a) Add Firebase Dependecies:
+
 }
+
+// TODO (2b) Apply Google Services Plugin:
+// This plugin reads google-services.json file & injects some of its values into your build
