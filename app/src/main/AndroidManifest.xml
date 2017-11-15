@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.thedancercodes.devfestfirebaseapp">
 
+    <!--TODO (3) Add Internet permission: To enable us make network calls.-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
