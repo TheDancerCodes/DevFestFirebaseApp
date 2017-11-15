@@ -243,7 +243,7 @@ public class ProfileScreenActivity extends AppCompatActivity {
                                         Toast.makeText(ProfileScreenActivity.this,
                                                 "Profile Deleted! Create a new account!",
                                                 Toast.LENGTH_LONG).show();
-                                        startActivity(new Intent(ProfileScreenActivity.this, SignupActivity.class));
+                                        startActivity(new Intent(ProfileScreenActivity.this, SignUpActivity.class));
                                         finish();
                                         mProgressBar.setVisibility(View.GONE);
                                     } else {
