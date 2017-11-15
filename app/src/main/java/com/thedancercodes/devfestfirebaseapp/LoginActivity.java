@@ -32,9 +32,6 @@ public class LoginActivity extends AppCompatActivity {
         // TODO: Inflate View elements in the LoginActivity
 
 
-        // TODO: Get FireBase auth instance
-
-
         // TODO: Sign Up OnClick Listener
 
 
