@@ -48,7 +48,8 @@ public class SignUpActivity extends AppCompatActivity {
         btnResetPassword.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(SignUpActivity.this, ResetPasswordActivity.class));
+                startActivity(new Intent(SignUpActivity.this,
+                        ResetPasswordActivity.class));
             }
         });
 
@@ -67,18 +68,25 @@ public class SignUpActivity extends AppCompatActivity {
                 String email = inputEmail.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
 
+                // Implement input validation
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplicationContext(), "Please Enter Email Address!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),
+                            "Please Enter Email Address!",
+                            Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(), "Please Enter your Password!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),
+                            "Please Enter your Password!",
+                            Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (password.length() < 6) {
-                    Toast.makeText(getApplicationContext(), "Password too short, enter minimum 6 characters!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),
+                            "Password too short, enter minimum 6 characters!",
+                            Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -86,20 +94,25 @@ public class SignUpActivity extends AppCompatActivity {
 
                 // Create a User with email and password data
                 auth.createUserWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(SignUpActivity.this, new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(SignUpActivity.this,
+                                new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
-                                Toast.makeText(SignUpActivity.this, "createUserWithEmail:onComplete:" + task.isSuccessful(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(SignUpActivity.this,
+                                        "createUserWithEmail:onComplete:" + task.isSuccessful(),
+                                        Toast.LENGTH_SHORT).show();
                                 progressBar.setVisibility(View.GONE);
 
                                 // If sign in fails, a message is displayed to the user.
                                 // If sign in succeeds the auth state listener will be notified and
                                 // logic to handle the signed in user can be handled in the listener.
                                 if (!task.isSuccessful()) {
-                                    Toast.makeText(SignUpActivity.this, "Authentication failed." + task.getException(),
+                                    Toast.makeText(SignUpActivity.this,
+                                            "Authentication failed." + task.getException(),
                                             Toast.LENGTH_SHORT).show();
                                 } else {
-                                    startActivity(new Intent(SignUpActivity.this, ProfileScreenActivity.class));
+                                    startActivity(new Intent(SignUpActivity.this,
+                                            ProfileScreenActivity.class));
                                     finish();
                                 }
                             }
