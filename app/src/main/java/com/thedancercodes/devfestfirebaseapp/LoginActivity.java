@@ -38,7 +38,8 @@ public class LoginActivity extends AppCompatActivity {
 
         // A condition for when a user is already logged in.
         if (auth.getCurrentUser() != null) {
-            startActivity(new Intent(LoginActivity.this, ProfileScreenActivity.class));
+            startActivity(new Intent(LoginActivity.this,
+                    ProfileScreenActivity.class));
             finish();
         }
 
@@ -56,21 +57,25 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.btn_login);
         btnReset = (Button) findViewById(R.id.btn_reset_password);
 
-
+        // Sign Up OnClick Listener
         btnSignup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
+                startActivity(new Intent(LoginActivity.this,
+                        SignUpActivity.class));
             }
         });
 
+        // Password Reset OnClick Listener
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(LoginActivity.this, ResetPasswordActivity.class));
+                startActivity(new Intent(LoginActivity.this,
+                        ResetPasswordActivity.class));
             }
         });
 
+        // Login OnClick Listener
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -78,12 +83,16 @@ public class LoginActivity extends AppCompatActivity {
                 final String password = inputPassword.getText().toString();
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplicationContext(), "Please Enter Email Address!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),
+                            "Please Enter Email Address!",
+                            Toast.LENGTH_SHORT).show();
                     return;
                 }
 
                 if (TextUtils.isEmpty(password)) {
-                    Toast.makeText(getApplicationContext(), "Please Enter your Password!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),
+                            "Please Enter your Password!",
+                            Toast.LENGTH_SHORT).show();
                     return;
                 }
 
@@ -91,7 +100,8 @@ public class LoginActivity extends AppCompatActivity {
 
                 // Authenticating the User
                 auth.signInWithEmailAndPassword(email, password)
-                        .addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+                        .addOnCompleteListener(LoginActivity.this,
+                                new OnCompleteListener<AuthResult>() {
                             @Override
                             public void onComplete(@NonNull Task<AuthResult> task) {
                                 mProgressBar.setVisibility(View.GONE);
@@ -105,10 +115,13 @@ public class LoginActivity extends AppCompatActivity {
                                     if (password.length() < 6) {
                                         inputPassword.setError(getString(R.string.minimum_password));
                                     } else {
-                                        Toast.makeText(LoginActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
+                                        Toast.makeText(LoginActivity.this,
+                                                getString(R.string.auth_failed),
+                                                Toast.LENGTH_LONG).show();
                                     }
                                 } else {
-                                    Intent intent = new Intent(LoginActivity.this, ProfileScreenActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this,
+                                            ProfileScreenActivity.class);
                                     startActivity(intent);
                                     finish();
                                 }
