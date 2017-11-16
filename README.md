@@ -26,6 +26,6 @@ Build and install
 
 2. On Android Studio, click on the "Run" button.
 
-###NOTE: At this point in time, the code may not run because of errors! 
+### NOTE: At this point in time, the code may not run because of errors! 
 Happy Bug Fixing. 👷
 
