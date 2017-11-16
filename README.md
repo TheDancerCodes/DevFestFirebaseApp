@@ -28,3 +28,31 @@ Build and install
 
 ### NOTE: At this point in time, the code may not run because of errors! 
 Happy Bug Fixing. 👷
+
+### Screenshots
+ 
+ 
+ <table>
+  <td>
+    <p align="center">
+  <img src="https://github.com/TheDancerCodes/DevFestFirebaseApp/blob/00-login-registration-authentication-exercise/art/register.png?raw=true" alt="Register" width="250"/>
+</p>
+</td>
+<td>
+    <p align="center">
+      <img src="https://github.com/TheDancerCodes/DevFestFirebaseApp/blob/00-login-registration-authentication-exercise/art/login.png?raw=true" alt="Login" width="250"/>
+    </p>
+  </td>
+  
+  <td>
+  <p align="center">
+  <img src="https://github.com/TheDancerCodes/DevFestFirebaseApp/blob/00-login-registration-authentication-exercise/art/profile.png?raw=true" alt="Profile" width="250"/>
+</p>
+</td>
+<td>
+   <p align="center">
+  <img src="https://github.com/TheDancerCodes/DevFestFirebaseApp/blob/00-login-registration-authentication-exercise/art/forgot.png?raw=true" alt="Forgot" width="250"/>
+</p>
+  </td>
+</tr>
+</table>
